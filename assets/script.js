@@ -20,4 +20,32 @@ const symbols = ["!","#","$","%","&","'","(",'"',")","*",",","+","-",".","/",":"
        }
        else {
         alert("Password length set!");
-        
+    }
+    hasUpperCase = confirm("Include uppwercase letters?");
+    if (hasUpperCase) {
+      alert("Uppercase letters included.");
+    }
+    else {
+      alert("Uppercase letters will be excluded.");
+    }
+
+  hasLowerCase = confirm("Include lowercase letters?");
+  if (hasLowerCase) {
+    alert("Lowercase letters included.");
+  }
+  else {
+    alert("Lowercase letters will be excluded.");
+  }
+  hasSymbols = confirm("Include symbols?");
+  if (hasSymbols) {
+    alert("Symbols included.");
+  }
+  else {
+    alert("Symbols excluded.");
+  }
+
+  if (hasLowerCase === false && hasUpperCase === false && hasNumbers === false && hasSymbols === false) {
+    alert("At least one character type must be chosen!");
+  };
+  
+// Validate the input//
