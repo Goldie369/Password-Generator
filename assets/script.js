@@ -80,3 +80,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
+
+// Added event listener//
+generateBtn.addEventListener("click", writePassword);
