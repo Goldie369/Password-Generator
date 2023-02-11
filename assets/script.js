@@ -47,5 +47,21 @@ const symbols = ["!","#","$","%","&","'","(",'"',")","*",",","+","-",".","/",":"
   if (hasLowerCase === false && hasUpperCase === false && hasNumbers === false && hasSymbols === false) {
     alert("At least one character type must be chosen!");
   };
-  
+
 // Validate the input//
+
+var passwordOptions = [];
+
+if (hasLowerCase) {
+  passwordOptions = passwordOptions.concat(lowerCaseSet);
+}
+if (hasUpperCase) {
+  passwordOptions = passwordOptions.concat(upperCaseSet);
+}
+if (hasNumbers) {
+  passwordOptions = passwordOptions.concat(numberSet);
+}
+if (hasSymbols) {
+  passwordOptions = passwordOptions.concat(symbols);
+}
+//Generate a randon password based on the selected criteria//
