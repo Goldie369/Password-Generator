@@ -64,4 +64,19 @@ if (hasNumbers) {
 if (hasSymbols) {
   passwordOptions = passwordOptions.concat(symbols);
 }
-//Generate a randon password based on the selected criteria//
+//Generate a random password based on the selected criteria//
+var password = ""
+  for (var i = 0; i < charNum; i++) {
+    var randomIndex =[Math.floor(Math.random() * passwordOptions.length)];
+    password = password + passwordOptions[randomIndex];
+  }
+  return password;
+};
+
+var generateBtn = document.querySelector("#generate");
+//Write a password input//
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+  passwordText.value = password;
+}
