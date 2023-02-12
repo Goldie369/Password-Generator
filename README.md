@@ -4,7 +4,6 @@ Random Password Generator
 
 Project Goal
 
-Project fulfills the following criteria:
 
 - GIVEN I need a new, secure password
 
@@ -50,3 +49,23 @@ Project fulfills the following criteria:
 
 
 
+## Pictures of deployed site
+
+<img src="./assets/images/Screen Shot one.png">
+
+
+
+
+<img src="./assets/images/Screen Shot two.png">
+
+# 🔗 Links
+
+- https://github.com/Goldie369/Password-Generator
+
+- https://goldie369.github.io/Password-Generator/
+
+
+
+MIT License
+
+Copyright (c) 2023 Goldie Rizova
